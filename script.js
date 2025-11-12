@@ -1,0 +1,172 @@
+/* Tipografía y reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+a {
+  color: #3b4cca; /* azul intenso */
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Botón “Ir arriba” */
+#btn-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background: #3b4cca;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Hero / Slideshow */
+#hero {
+  position: relative;
+  height: 80vh;
+  min­-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.slide.active {
+  opacity: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero-content .subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Sección Sobre el artista */
+#sobre {
+  background-color: #fff;
+}
+#sobre .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.foto-artista img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  margin-right: 2rem;
+}
+.bio {
+  flex: 1;
+}
+
+/* Galería */
+#galeria .grid {
+  display: grid;
+  grid-template­-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+#galeria .grid-item img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#galeria .grid-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Contacto */
+#contacto {
+  background-color: #fff;
+}
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contacto input,
+#contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#contacto button {
+  width: fit-content;
+  padding: 12px 25px;
+  background: #3b4cca;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#contacto button:hover {
+  background: #2a328c;
+}
+#contacto .redes {
+  margin-top: 20px;
+}
+#contacto .redes a {
+  margin-right: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
