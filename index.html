@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirko Hernández – Acuarelista Chileno</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="btn-top" title="Ir arriba">↑</button>
+
+  <header id="hero">
+    <div class="slideshow">
+      <div class="slide active" style="background-image: url('img/obra1.jpg');"></div>
+      <div class="slide" style="background-image: url('img/obra2.jpg');"></div>
+      <div class="slide" style="background-image: url('img/obra3.jpg');"></div>
+      <!-- Añade más slides según lo necesites -->
+    </div>
+    <div class="hero-content">
+      <h1>Mirko Hernández</h1>
+      <p class="subtitle">Acuarelista Chileno</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="sobre" class="fade-in">
+      <div class="container">
+        <div class="foto-artista">
+          <img src="img/foto-mirko.jpg" alt="Mirko Hernández">
+        </div>
+        <div class="bio">
+          <h2>Sobre el artista</h2>
+          <p>Aquí va un breve texto sobre Mirko: su trayectoria, inspiración, estilo artístico, técnica de acuarela, etc.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="fade-in">
+      <div class="container">
+        <h2>Galería de obras</h2>
+        <div class="grid">
+          <div class="grid-item"><img src="img/obra4.jpg" alt="Obra 4"></div>
+          <div class="grid-item"><img src="img/obra5.jpg" alt="Obra 5"></div>
+          <div class="grid-item"><img src="img/obra6.jpg" alt="Obra 6"></div>
+          <!-- Más items -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="fade-in">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="redes">
+          <p>Sígueme en redes sociales:</p>
+          <a href="https://www.facebook.com/MIRKO.HERNANDEZ.SANTANDER" target="_blank">Facebook</a>
+          <!-- Añadir otros enlaces si quieres -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Mirko Hernández. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
